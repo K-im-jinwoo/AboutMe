@@ -1,9 +1,8 @@
 import { FC, ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 
-export interface ReactButtonProps
-  extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
+interface ReactButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
 
-export interface ButtonProps extends ReactButtonProps {
+interface ButtonProps extends ReactButtonProps {
   text: string;
   onClick?: () => void;
   className?: string;
