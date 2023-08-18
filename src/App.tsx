@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Button, Icon, Progress } from './components/atoms';
-import './styles/index.css';
+import './index.css';
 
 
 function App() {
