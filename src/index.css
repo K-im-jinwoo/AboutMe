@@ -1,5 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: "DungGeunMo";
+    src: url("./fonts/DungGeunMo.woff") format("woff");
+}
 
-@import "../node_modules/nes.css/css/nes.css"
+@import "../node_modules/nes.css/css/nes.css";
+
+body {
+    font-family: "DungGeunMo",sans-serif;
+}
