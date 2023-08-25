@@ -4,9 +4,8 @@ import { Navbar, Dropdown } from "../organisms"
 export const LayoutTemplate = () => {
     return (
         <>
-            <header className="flex justify-between">
+            <header className="flex justify-between m-4">
                 <Title text="About JW" textAlign="text-left"/>
-                <Navbar/>
                 <Dropdown items={[
                     {text:"ddd"},
                     {text:"ddd"},
@@ -15,6 +14,7 @@ export const LayoutTemplate = () => {
                     {text:"ddd"},
                     ]}/>
             </header>
+            
         </>
     )
 

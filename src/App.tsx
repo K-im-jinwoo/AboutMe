@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Button, Icon, Progress } from './components/atoms';
 import './index.css';
-import { LayoutTemplate } from './components/templates/LayoutTemplate';
+import { Home } from './components/pages/Home';
 
 
 function App() {
   return (
     <>
-      <LayoutTemplate />
+      <Home />
     </>
   );
 }
