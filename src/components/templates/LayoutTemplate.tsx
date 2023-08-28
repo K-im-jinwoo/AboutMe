@@ -1,7 +1,13 @@
+import React, { FC } from "react"
 import { Title } from "../atoms"
 import { Navbar, Dropdown } from "../organisms"
 
-export const LayoutTemplate = () => {
+interface LayoutTemplateProps {
+    children: React.ReactNode;
+  }
+  
+
+export const LayoutTemplate: FC<LayoutTemplateProps> = ({children}) => {
     return (
         <>
             <header className="flex justify-between m-4">
@@ -14,7 +20,9 @@ export const LayoutTemplate = () => {
                     {text:"ddd"},
                     ]}/>
             </header>
-            
+            <main>
+                {children}
+            </main>
         </>
     )
 

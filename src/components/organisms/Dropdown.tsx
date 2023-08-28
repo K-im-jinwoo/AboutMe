@@ -1,7 +1,24 @@
 import { FC, useState } from "react";
-import { DropdownItems } from "../molecules";
-import { Button, TextProps } from "../atoms";
+import { Button, Text, TextProps } from "../atoms";
+import { makeClassName } from "../../utils/textUtil";
 
+interface DropdownItemProps {
+    items: TextProps[];
+}
+
+const DropdownItems:FC<DropdownItemProps> = ({items}) => {
+    return (
+        <ul className={makeClassName('flex flex-col text-2xl bold')}>
+                {items.map((item,index) => {
+                    return (
+                        <li key={index}>
+                            <Text text={item.text} {...items}></Text>
+                        </li>
+                    )
+                })}
+        </ul>
+    )
+}
 interface DropdownProps {
   items: TextProps[];
 }
