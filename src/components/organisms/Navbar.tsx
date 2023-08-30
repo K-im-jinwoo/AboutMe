@@ -9,6 +9,6 @@ export const Navbar: FC = () => (
             {text:'Project', path:'/'},
             {text:'Contact', path:'/'},
         ]}
-        className=''
+        className='justify-center'
     />
 )

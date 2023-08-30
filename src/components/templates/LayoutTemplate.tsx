@@ -1,6 +1,6 @@
 import React, { FC } from "react"
-import { Title } from "../atoms"
-import { Navbar, Dropdown } from "../organisms"
+import { useResponsive } from "../../contexts";
+import { Header } from "./Header/Header";
 
 interface LayoutTemplateProps {
     children: React.ReactNode;
@@ -8,20 +8,22 @@ interface LayoutTemplateProps {
   
 
 export const LayoutTemplate: FC<LayoutTemplateProps> = ({children}) => {
+    const breakpoint = useResponsive()
     return (
         <>
-            <header className="flex justify-between m-4">
-                <Title text="About JW" textAlign="text-left"/>
-                <Dropdown items={[
-                    {text:"ddd"},
-                    {text:"ddd"},
-                    {text:"ddd"},
-                    {text:"ddd"},
-                    {text:"ddd"},
-                    ]}/>
-            </header>
+            <Header />
             <main>
-                {children}
+                {breakpoint !== 'md' && 
+                    <div className="mt-24">
+                        {children}
+                    </div>
+                } 
+
+                {breakpoint === 'md' && 
+                    <div className="mt-40">
+                        {children}
+                    </div>
+                }
             </main>
         </>
     )
