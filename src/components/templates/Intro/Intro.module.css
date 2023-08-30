@@ -1,0 +1,25 @@
+.intro__title {
+    font-size: 10vw;
+}
+.intro__text {
+    height: 40vh;
+}
+.text {
+    font-size: 3vw;
+    text-decoration: underline;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+.character_large {
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+.intro__text:hover .text {
+    opacity: 0;
+}
+.intro__text:hover .character_large {
+    filter: grayscale(0);
+}
