@@ -1,5 +1,4 @@
-import { MessageList } from "../organisms"
-import { Intro, LayoutTemplate } from "../templates"
+import { Intro, About, LayoutTemplate } from "../templates"
 
 export const Home = () => {
     return (
@@ -7,6 +6,7 @@ export const Home = () => {
             <LayoutTemplate>
                 {/* <MessageList></MessageList> */}
                 <Intro />
+                <About />
             </LayoutTemplate>
         </>
     )

@@ -1,0 +1,41 @@
+.about__inner {
+    background-color: #f3ede8;
+}
+
+.about__title {
+    top: 70px;
+    font-size: 3vw;
+    width: 48%;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.about__num {
+    font-size: 8vw;
+    line-height: 1;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.about__subtitle {
+    margin-bottom: 1vw;
+}
+
+.about__desc_text {
+    display: block;
+    margin-bottom: 30vh;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width:768px) {
+    .about__title {
+        width:100%;
+        margin-bottom: 10vw;
+        top: 68px;
+        background-color: #f3ede8;
+    }
+    .about__num {
+        font-size: 20vw;
+    }
+}
