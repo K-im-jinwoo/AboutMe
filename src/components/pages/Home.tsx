@@ -1,4 +1,4 @@
-import { Intro, About, LayoutTemplate } from "../templates"
+import { Intro, About, LayoutTemplate, Portfolio, Contact } from "../templates"
 
 export const Home = () => {
     return (
@@ -7,6 +7,8 @@ export const Home = () => {
                 {/* <MessageList></MessageList> */}
                 <Intro />
                 <About />
+                <Portfolio/>
+                <Contact />
             </LayoutTemplate>
         </>
     )

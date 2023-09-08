@@ -1,0 +1,38 @@
+#port {
+    margin-top: 30vh;
+}
+
+.port__title {
+    font-size: 4vw;
+    line-height: 1.6;
+}
+
+.port__wrap {
+    width: 7000px;
+}
+
+.port__item {
+    width: 500px;
+    height: 70vh;
+}
+
+.img {
+    margin-top: -20px;
+    transition: margin-top 0.3s;
+}
+
+.img > img {
+    transition: all 0.3s;
+}
+
+.img:hover {
+    margin-top: 0;
+}
+
+.img:hover > img {
+    filter:saturate(100%)
+}
+
+.site {
+    
+}
